@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "03VCv3Q5KluFZcaZN59BwzkzxcOcz/JgNU7CKh63vuE=",
+  "Source": "APILayer",
+  "BasePath": "_content/APILayer",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

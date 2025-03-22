@@ -1,0 +1,15 @@
+C:\Programming_Projects\Bondouqe Transportaion App\BusinessLayer\bin\Debug\net9.0\BusinessLayer.deps.json
+C:\Programming_Projects\Bondouqe Transportaion App\BusinessLayer\bin\Debug\net9.0\BusinessLayer.dll
+C:\Programming_Projects\Bondouqe Transportaion App\BusinessLayer\bin\Debug\net9.0\BusinessLayer.pdb
+C:\Programming_Projects\Bondouqe Transportaion App\BusinessLayer\bin\Debug\net9.0\DAL.dll
+C:\Programming_Projects\Bondouqe Transportaion App\BusinessLayer\bin\Debug\net9.0\DAL.pdb
+C:\Programming_Projects\Bondouqe Transportaion App\BusinessLayer\obj\Debug\net9.0\BusinessLayer.csproj.AssemblyReference.cache
+C:\Programming_Projects\Bondouqe Transportaion App\BusinessLayer\obj\Debug\net9.0\BusinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Programming_Projects\Bondouqe Transportaion App\BusinessLayer\obj\Debug\net9.0\BusinessLayer.AssemblyInfoInputs.cache
+C:\Programming_Projects\Bondouqe Transportaion App\BusinessLayer\obj\Debug\net9.0\BusinessLayer.AssemblyInfo.cs
+C:\Programming_Projects\Bondouqe Transportaion App\BusinessLayer\obj\Debug\net9.0\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Programming_Projects\Bondouqe Transportaion App\BusinessLayer\obj\Debug\net9.0\Business.EA331CBA.Up2Date
+C:\Programming_Projects\Bondouqe Transportaion App\BusinessLayer\obj\Debug\net9.0\BusinessLayer.dll
+C:\Programming_Projects\Bondouqe Transportaion App\BusinessLayer\obj\Debug\net9.0\refint\BusinessLayer.dll
+C:\Programming_Projects\Bondouqe Transportaion App\BusinessLayer\obj\Debug\net9.0\BusinessLayer.pdb
+C:\Programming_Projects\Bondouqe Transportaion App\BusinessLayer\obj\Debug\net9.0\ref\BusinessLayer.dll
