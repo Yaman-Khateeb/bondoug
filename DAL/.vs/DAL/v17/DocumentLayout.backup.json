@@ -3,60 +3,40 @@
   "WorkspaceRootPath": "C:\\Programming_Projects\\Bondouqe Transportaion App\\DAL\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E713F58C-A823-49E7-9E33-5D64477F55CF}|DAL.csproj|c:\\programming_projects\\bondouqe transportaion app\\dal\\eventridesdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E713F58C-A823-49E7-9E33-5D64477F55CF}|DAL.csproj|solutionrelative:eventridesdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9AEAAC4A-9B65-4690-A7F6-2E8040CEF20C}|..\\APILayer\\BondouqTransportation.csproj|c:\\programming_projects\\bondouqe transportaion app\\apilayer\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E713F58C-A823-49E7-9E33-5D64477F55CF}|DAL.csproj|c:\\programming_projects\\bondouqe transportaion app\\dal\\eventregestirationsdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E713F58C-A823-49E7-9E33-5D64477F55CF}|DAL.csproj|solutionrelative:eventregestirationsdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9AEAAC4A-9B65-4690-A7F6-2E8040CEF20C}|..\\APILayer\\BondouqTransportation.csproj|c:\\programming_projects\\bondouqe transportaion app\\apilayer\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{39E9FFD7-5537-4663-A1A1-81F4A9EA5F03}|..\\BusinessLayer\\BusinessLayer.csproj|c:\\programming_projects\\bondouqe transportaion app\\businesslayer\\eventrides.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9AEAAC4A-9B65-4690-A7F6-2E8040CEF20C}|..\\APILayer\\BondouqTransportation.csproj|c:\\programming_projects\\bondouqe transportaion app\\apilayer\\dal\\admindata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9AEAAC4A-9B65-4690-A7F6-2E8040CEF20C}|..\\APILayer\\APILayer.csproj|c:\\programming_projects\\bondouqe transportaion app\\apilayer\\controllers\\eventridescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9AEAAC4A-9B65-4690-A7F6-2E8040CEF20C}|..\\APILayer\\BondouqTransportation.csproj|c:\\programming_projects\\bondouqe transportaion app\\apilayer\\businesslayer\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9AEAAC4A-9B65-4690-A7F6-2E8040CEF20C}|..\\APILayer\\APILayer.csproj|c:\\programming_projects\\bondouqe transportaion app\\apilayer\\controllers\\mosquescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9AEAAC4A-9B65-4690-A7F6-2E8040CEF20C}|..\\APILayer\\BondouqTransportation.csproj|c:\\programming_projects\\bondouqe transportaion app\\apilayer\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{39E9FFD7-5537-4663-A1A1-81F4A9EA5F03}|..\\BusinessLayer\\BusinessLayer.csproj|c:\\programming_projects\\bondouqe transportaion app\\businesslayer\\eventregestiration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9AEAAC4A-9B65-4690-A7F6-2E8040CEF20C}|..\\APILayer\\BondouqTransportation.csproj|c:\\programming_projects\\bondouqe transportaion app\\apilayer\\dal\\dataaccesssettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9AEAAC4A-9B65-4690-A7F6-2E8040CEF20C}|..\\APILayer\\APILayer.csproj|c:\\programming_projects\\bondouqe transportaion app\\apilayer\\controllers\\eventregisterationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9AEAAC4A-9B65-4690-A7F6-2E8040CEF20C}|..\\APILayer\\BondouqTransportation.csproj|c:\\programming_projects\\bondouqe transportaion app\\apilayer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9AEAAC4A-9B65-4690-A7F6-2E8040CEF20C}|..\\APILayer\\APILayer.csproj|c:\\programming_projects\\bondouqe transportaion app\\apilayer\\controllers\\eventscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9AEAAC4A-9B65-4690-A7F6-2E8040CEF20C}|..\\APILayer\\BondouqTransportation.csproj|c:\\programming_projects\\bondouqe transportaion app\\apilayer\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9AEAAC4A-9B65-4690-A7F6-2E8040CEF20C}|..\\APILayer\\APILayer.csproj|c:\\programming_projects\\bondouqe transportaion app\\apilayer\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9AEAAC4A-9B65-4690-A7F6-2E8040CEF20C}|..\\APILayer\\BondouqTransportation.csproj|c:\\programming_projects\\bondouqe transportaion app\\apilayer\\controllers\\eventregisterationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9AEAAC4A-9B65-4690-A7F6-2E8040CEF20C}|..\\APILayer\\APILayer.csproj|c:\\programming_projects\\bondouqe transportaion app\\apilayer\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9AEAAC4A-9B65-4690-A7F6-2E8040CEF20C}|..\\APILayer\\BondouqTransportation.csproj|c:\\programming_projects\\bondouqe transportaion app\\apilayer\\controllers\\eventscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{39E9FFD7-5537-4663-A1A1-81F4A9EA5F03}|..\\BusinessLayer\\BusinessLayer.csproj|c:\\programming_projects\\bondouqe transportaion app\\businesslayer\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9AEAAC4A-9B65-4690-A7F6-2E8040CEF20C}|..\\APILayer\\BondouqTransportation.csproj|c:\\programming_projects\\bondouqe transportaion app\\apilayer\\controllers\\mosquescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E713F58C-A823-49E7-9E33-5D64477F55CF}|DAL.csproj|c:\\programming_projects\\bondouqe transportaion app\\dal\\eventdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E713F58C-A823-49E7-9E33-5D64477F55CF}|DAL.csproj|solutionrelative:eventdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{39E9FFD7-5537-4663-A1A1-81F4A9EA5F03}|..\\BusinessLayer\\BusinessLayer.csproj|c:\\programming_projects\\bondouqe transportaion app\\businesslayer\\mosque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{39E9FFD7-5537-4663-A1A1-81F4A9EA5F03}|..\\BusinessLayer\\BusinessLayer.csproj|c:\\programming_projects\\bondouqe transportaion app\\businesslayer\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E713F58C-A823-49E7-9E33-5D64477F55CF}|DAL.csproj|c:\\programming_projects\\bondouqe transportaion app\\dal\\mosquedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E713F58C-A823-49E7-9E33-5D64477F55CF}|DAL.csproj|solutionrelative:mosquedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E713F58C-A823-49E7-9E33-5D64477F55CF}|DAL.csproj|c:\\programming_projects\\bondouqe transportaion app\\dal\\dal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{E713F58C-A823-49E7-9E33-5D64477F55CF}|DAL.csproj|solutionrelative:dal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9AEAAC4A-9B65-4690-A7F6-2E8040CEF20C}|..\\APILayer\\APILayer.csproj|c:\\programming_projects\\bondouqe transportaion app\\apilayer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9AEAAC4A-9B65-4690-A7F6-2E8040CEF20C}|..\\APILayer\\BondouqTransportation.csproj|c:\\programming_projects\\bondouqe transportaion app\\apilayer\\controllers\\eventridescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,34 +46,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 21,
+          "SelectedChildIndex": 18,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Users.cs",
-              "DocumentMoniker": "C:\\Programming_Projects\\Bondouqe Transportaion App\\BusinessLayer\\Users.cs",
-              "RelativeDocumentMoniker": "..\\BusinessLayer\\Users.cs",
-              "ToolTip": "C:\\Programming_Projects\\Bondouqe Transportaion App\\BusinessLayer\\Users.cs",
-              "RelativeToolTip": "..\\BusinessLayer\\Users.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAQwDYAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T05:02:45.368Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\Programming_Projects\\Bondouqe Transportaion App\\APILayer\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "..\\APILayer\\Controllers\\UsersController.cs",
-              "ToolTip": "C:\\Programming_Projects\\Bondouqe Transportaion App\\APILayer\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "..\\APILayer\\Controllers\\UsersController.cs",
-              "ViewState": "AgIAAEwAAAAAAAAAAAAYwFQAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T05:55:00.56Z",
-              "IsPinned": true
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
@@ -164,44 +118,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "EventRegisterationsController.cs",
-              "DocumentMoniker": "C:\\Programming_Projects\\Bondouqe Transportaion App\\APILayer\\Controllers\\EventRegisterationsController.cs",
-              "RelativeDocumentMoniker": "..\\APILayer\\Controllers\\EventRegisterationsController.cs",
-              "ToolTip": "C:\\Programming_Projects\\Bondouqe Transportaion App\\APILayer\\Controllers\\EventRegisterationsController.cs",
-              "RelativeToolTip": "..\\APILayer\\Controllers\\EventRegisterationsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T06:06:18.124Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "EventsController.cs",
-              "DocumentMoniker": "C:\\Programming_Projects\\Bondouqe Transportaion App\\APILayer\\Controllers\\EventsController.cs",
-              "RelativeDocumentMoniker": "..\\APILayer\\Controllers\\EventsController.cs",
-              "ToolTip": "C:\\Programming_Projects\\Bondouqe Transportaion App\\APILayer\\Controllers\\EventsController.cs",
-              "RelativeToolTip": "..\\APILayer\\Controllers\\EventsController.cs",
-              "ViewState": "AgIAAGoAAAAAAAAAAAAcwIEAAAAAAAAAAAAAAA==",
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Programming_Projects\\Bondouqe Transportaion App\\APILayer\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "..\\APILayer\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Programming_Projects\\Bondouqe Transportaion App\\APILayer\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "..\\APILayer\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAxwBkAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T14:39:39.64Z"
+              "WhenOpened": "2025-03-18T05:55:00.56Z",
+              "IsPinned": true
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "EventRidesData.cs",
-              "DocumentMoniker": "C:\\Programming_Projects\\Bondouqe Transportaion App\\DAL\\EventRidesData.cs",
-              "RelativeDocumentMoniker": "EventRidesData.cs",
-              "ToolTip": "C:\\Programming_Projects\\Bondouqe Transportaion App\\DAL\\EventRidesData.cs",
-              "RelativeToolTip": "EventRidesData.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAA9wBMAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T06:27:23.956Z",
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Programming_Projects\\Bondouqe Transportaion App\\APILayer\\appsettings.json",
+              "RelativeDocumentMoniker": "..\\APILayer\\appsettings.json",
+              "ToolTip": "C:\\Programming_Projects\\Bondouqe Transportaion App\\APILayer\\appsettings.json*",
+              "RelativeToolTip": "..\\APILayer\\appsettings.json*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-23T09:53:49.103Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Programming_Projects\\Bondouqe Transportaion App\\APILayer\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "..\\APILayer\\appsettings.Development.json",
+              "ToolTip": "C:\\Programming_Projects\\Bondouqe Transportaion App\\APILayer\\appsettings.Development.json",
+              "RelativeToolTip": "..\\APILayer\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-23T09:39:50.145Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Admin.cs",
+              "DocumentMoniker": "C:\\Programming_Projects\\Bondouqe Transportaion App\\APILayer\\BusinessLayer\\Admin.cs",
+              "RelativeDocumentMoniker": "..\\APILayer\\BusinessLayer\\Admin.cs",
+              "ToolTip": "C:\\Programming_Projects\\Bondouqe Transportaion App\\APILayer\\BusinessLayer\\Admin.cs",
+              "RelativeToolTip": "..\\APILayer\\BusinessLayer\\Admin.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAuwCAAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T09:26:25.27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "MosquesController.cs",
               "DocumentMoniker": "C:\\Programming_Projects\\Bondouqe Transportaion App\\APILayer\\Controllers\\MosquesController.cs",
               "RelativeDocumentMoniker": "..\\APILayer\\Controllers\\MosquesController.cs",
@@ -213,7 +182,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 11,
               "Title": "EventRidesController.cs",
               "DocumentMoniker": "C:\\Programming_Projects\\Bondouqe Transportaion App\\APILayer\\Controllers\\EventRidesController.cs",
               "RelativeDocumentMoniker": "..\\APILayer\\Controllers\\EventRidesController.cs",
@@ -225,124 +194,79 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "EventRegestiration.cs",
-              "DocumentMoniker": "C:\\Programming_Projects\\Bondouqe Transportaion App\\BusinessLayer\\EventRegestiration.cs",
-              "RelativeDocumentMoniker": "..\\BusinessLayer\\EventRegestiration.cs",
-              "ToolTip": "C:\\Programming_Projects\\Bondouqe Transportaion App\\BusinessLayer\\EventRegestiration.cs",
-              "RelativeToolTip": "..\\BusinessLayer\\EventRegestiration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T06:04:59.416Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EventRegestirationsData.cs",
-              "DocumentMoniker": "C:\\Programming_Projects\\Bondouqe Transportaion App\\DAL\\EventRegestirationsData.cs",
-              "RelativeDocumentMoniker": "EventRegestirationsData.cs",
-              "ToolTip": "C:\\Programming_Projects\\Bondouqe Transportaion App\\DAL\\EventRegestirationsData.cs",
-              "RelativeToolTip": "EventRegestirationsData.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAABdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T05:53:46.756Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "EventRides.cs",
-              "DocumentMoniker": "C:\\Programming_Projects\\Bondouqe Transportaion App\\BusinessLayer\\EventRides.cs",
-              "RelativeDocumentMoniker": "..\\BusinessLayer\\EventRides.cs",
-              "ToolTip": "C:\\Programming_Projects\\Bondouqe Transportaion App\\BusinessLayer\\EventRides.cs",
-              "RelativeToolTip": "..\\BusinessLayer\\EventRides.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAcwCwAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T06:30:35.471Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AdminController.cs",
-              "DocumentMoniker": "C:\\Programming_Projects\\Bondouqe Transportaion App\\APILayer\\Controllers\\AdminController.cs",
-              "RelativeDocumentMoniker": "..\\APILayer\\Controllers\\AdminController.cs",
-              "ToolTip": "C:\\Programming_Projects\\Bondouqe Transportaion App\\APILayer\\Controllers\\AdminController.cs",
-              "RelativeToolTip": "..\\APILayer\\Controllers\\AdminController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGMAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T10:38:28.193Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "EventData.cs",
-              "DocumentMoniker": "C:\\Programming_Projects\\Bondouqe Transportaion App\\DAL\\EventData.cs",
-              "RelativeDocumentMoniker": "EventData.cs",
-              "ToolTip": "C:\\Programming_Projects\\Bondouqe Transportaion App\\DAL\\EventData.cs",
-              "RelativeToolTip": "EventData.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAA3wEcAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T14:24:52.364Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Event.cs",
-              "DocumentMoniker": "C:\\Programming_Projects\\Bondouqe Transportaion App\\BusinessLayer\\Event.cs",
-              "RelativeDocumentMoniker": "..\\BusinessLayer\\Event.cs",
-              "ToolTip": "C:\\Programming_Projects\\Bondouqe Transportaion App\\BusinessLayer\\Event.cs",
-              "RelativeToolTip": "..\\BusinessLayer\\Event.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAACAAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T14:29:34.296Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Mosque.cs",
-              "DocumentMoniker": "C:\\Programming_Projects\\Bondouqe Transportaion App\\BusinessLayer\\Mosque.cs",
-              "RelativeDocumentMoniker": "..\\BusinessLayer\\Mosque.cs",
-              "ToolTip": "C:\\Programming_Projects\\Bondouqe Transportaion App\\BusinessLayer\\Mosque.cs",
-              "RelativeToolTip": "..\\BusinessLayer\\Mosque.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBYAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T10:30:53.224Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "MosqueData.cs",
-              "DocumentMoniker": "C:\\Programming_Projects\\Bondouqe Transportaion App\\DAL\\MosqueData.cs",
-              "RelativeDocumentMoniker": "MosqueData.cs",
-              "ToolTip": "C:\\Programming_Projects\\Bondouqe Transportaion App\\DAL\\MosqueData.cs",
-              "RelativeToolTip": "MosqueData.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAwwCwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T10:28:30.474Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "DAL.csproj",
-              "DocumentMoniker": "C:\\Programming_Projects\\Bondouqe Transportaion App\\DAL\\DAL.csproj",
-              "RelativeDocumentMoniker": "DAL.csproj",
-              "ToolTip": "C:\\Programming_Projects\\Bondouqe Transportaion App\\DAL\\DAL.csproj",
-              "RelativeToolTip": "DAL.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-19T10:28:07.669Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Programming_Projects\\Bondouqe Transportaion App\\APILayer\\Program.cs",
               "RelativeDocumentMoniker": "..\\APILayer\\Program.cs",
               "ToolTip": "C:\\Programming_Projects\\Bondouqe Transportaion App\\APILayer\\Program.cs",
               "RelativeToolTip": "..\\APILayer\\Program.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwCMAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAtwAYAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T05:40:15.93Z"
+              "WhenOpened": "2025-03-18T05:40:15.93Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Programming_Projects\\Bondouqe Transportaion App\\APILayer\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "..\\APILayer\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Programming_Projects\\Bondouqe Transportaion App\\APILayer\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "..\\APILayer\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T10:38:28.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AdminData.cs",
+              "DocumentMoniker": "C:\\Programming_Projects\\Bondouqe Transportaion App\\APILayer\\DAL\\AdminData.cs",
+              "RelativeDocumentMoniker": "..\\APILayer\\DAL\\AdminData.cs",
+              "ToolTip": "C:\\Programming_Projects\\Bondouqe Transportaion App\\APILayer\\DAL\\AdminData.cs",
+              "RelativeToolTip": "..\\APILayer\\DAL\\AdminData.cs",
+              "ViewState": "AgIAADIBAAAAAAAAAAAuwEIBAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T09:43:55.993Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DataAccessSettings.cs",
+              "DocumentMoniker": "C:\\Programming_Projects\\Bondouqe Transportaion App\\APILayer\\DAL\\DataAccessSettings.cs",
+              "RelativeDocumentMoniker": "..\\APILayer\\DAL\\DataAccessSettings.cs",
+              "ToolTip": "C:\\Programming_Projects\\Bondouqe Transportaion App\\APILayer\\DAL\\DataAccessSettings.cs",
+              "RelativeToolTip": "..\\APILayer\\DAL\\DataAccessSettings.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAwCIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T09:40:06.552Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EventsController.cs",
+              "DocumentMoniker": "C:\\Programming_Projects\\Bondouqe Transportaion App\\APILayer\\Controllers\\EventsController.cs",
+              "RelativeDocumentMoniker": "..\\APILayer\\Controllers\\EventsController.cs",
+              "ToolTip": "C:\\Programming_Projects\\Bondouqe Transportaion App\\APILayer\\Controllers\\EventsController.cs",
+              "RelativeToolTip": "..\\APILayer\\Controllers\\EventsController.cs",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAcwIEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T14:39:39.64Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EventRegisterationsController.cs",
+              "DocumentMoniker": "C:\\Programming_Projects\\Bondouqe Transportaion App\\APILayer\\Controllers\\EventRegisterationsController.cs",
+              "RelativeDocumentMoniker": "..\\APILayer\\Controllers\\EventRegisterationsController.cs",
+              "ToolTip": "C:\\Programming_Projects\\Bondouqe Transportaion App\\APILayer\\Controllers\\EventRegisterationsController.cs",
+              "RelativeToolTip": "..\\APILayer\\Controllers\\EventRegisterationsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T06:06:18.124Z"
             }
           ]
         },
