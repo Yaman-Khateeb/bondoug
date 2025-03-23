@@ -1,6 +1,0 @@
-@BondouqTransportaion_HostAddress = http://localhost:5221
-
-GET {{BondouqTransportaion_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
