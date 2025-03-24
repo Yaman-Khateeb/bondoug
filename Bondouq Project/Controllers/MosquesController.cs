@@ -62,7 +62,7 @@ namespace APILayer.Controllers
         {
             if (mosqueDTO == null
                 || string.IsNullOrWhiteSpace(mosqueDTO.Name) || mosqueDTO.Name.ToLower() == "string"
-                || string.IsNullOrWhiteSpace(mosqueDTO.Address) || mosqueDTO.Address.ToLower() == "string"
+               
                 || mosqueDTO.Longitude < -180 || mosqueDTO.Longitude > 180
                 || mosqueDTO.Latitude < -90 || mosqueDTO.Latitude > 90)
                 return BadRequest("Invalid mosque data.");
@@ -90,7 +90,7 @@ namespace APILayer.Controllers
         {
             if (mosqueDTO == null || mosqueDTO.ID <= 0
                 || string.IsNullOrWhiteSpace(mosqueDTO.Name) || mosqueDTO.Name.ToLower() == "string"
-                || string.IsNullOrWhiteSpace(mosqueDTO.Address) || mosqueDTO.Address.ToLower() == "string"
+                
                 || mosqueDTO.Longitude < -180 || mosqueDTO.Longitude > 180
                 || mosqueDTO.Latitude < -90 || mosqueDTO.Latitude > 90)
                 return BadRequest("Invalid mosque data.");

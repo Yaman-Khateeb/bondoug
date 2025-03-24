@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BondouqTransportation")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+33578f353f3b283e74a2a148afbed0b834d525ed")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+71197d47a539fe228211e009d54ccaaf221cec90")]
 [assembly: System.Reflection.AssemblyProductAttribute("BondouqTransportation")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BondouqTransportation")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -7,8 +7,7 @@ using Microsoft.Data.SqlClient;
 public class MosqueDTO
 {
     public int ID { get; set; }
-    public string Name { get; set; }
-    public string Address { get; set; }
+    public string Name { get; set; }    
     public float Longitude { get; set; }
     public float Latitude { get; set; }
 }
@@ -26,7 +25,7 @@ public static class MosquesData
             {
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@Name", mosque.Name);
-                cmd.Parameters.AddWithValue("@Address", mosque.Address);
+                
                 cmd.Parameters.AddWithValue("@Longitude", mosque.Longitude);
                 cmd.Parameters.AddWithValue("@Latitude", mosque.Latitude);
 
@@ -60,7 +59,7 @@ public static class MosquesData
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@MosqueID", mosque.ID);
                 cmd.Parameters.AddWithValue("@Name", mosque.Name);
-                cmd.Parameters.AddWithValue("@Address", mosque.Address);
+                
                 cmd.Parameters.AddWithValue("@Longitude", mosque.Longitude);
                 cmd.Parameters.AddWithValue("@Latitude", mosque.Latitude);
 
@@ -115,7 +114,7 @@ public static class MosquesData
                         {
                             ID = Convert.ToInt32(reader["ID"]),
                             Name = reader["Name"].ToString(),
-                            Address = reader["Address"].ToString(),
+                            
                             Longitude = Convert.ToSingle(reader["Longitude"]),
                             Latitude = Convert.ToSingle(reader["Latitude"])
                         };
@@ -147,7 +146,7 @@ public static class MosquesData
                         {
                             ID = Convert.ToInt32(reader["ID"]),
                             Name = reader["Name"].ToString(),
-                            Address = reader["Address"].ToString(),
+                            
                             Longitude = Convert.ToSingle(reader["Longitude"]),
                             Latitude = Convert.ToSingle(reader["Latitude"])
                         });

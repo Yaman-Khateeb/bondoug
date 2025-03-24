@@ -15,7 +15,7 @@ namespace DAL
             public int EventID { get; set; }
             public int ComingStatus { get; set; }  // 0 = Not Coming, 1 = Coming, 2 = Needs Ride, 3 = Providing Ride
             public int? CarCapacity { get; set; }  // Only for those providing rides
-            public string PickupAddress { get; set; } // Only for those needing a ride
+            
             public double? Longitude { get; set; }
             public double? Latitude { get; set; }
             public DateTime RegisteredAt { get; set; }
@@ -43,7 +43,7 @@ namespace DAL
                     cmd.Parameters.AddWithValue("@EventID", eventRegDTO.EventID);
                     cmd.Parameters.AddWithValue("@ComingStatus", eventRegDTO.ComingStatus);
                     cmd.Parameters.AddWithValue("@CarCapacity", (object)eventRegDTO.CarCapacity ?? DBNull.Value);
-                    cmd.Parameters.AddWithValue("@PickupAddress", (object)eventRegDTO.PickupAddress ?? DBNull.Value);
+                    
                     cmd.Parameters.AddWithValue("@Longitude", (object)eventRegDTO.Longitude ?? DBNull.Value);
                     cmd.Parameters.AddWithValue("@Latitude", (object)eventRegDTO.Latitude ?? DBNull.Value);
 
@@ -81,7 +81,7 @@ namespace DAL
                     cmd.Parameters.AddWithValue("@RegistrationID", eventRegDTO.ID);
                     cmd.Parameters.AddWithValue("@ComingStatus", eventRegDTO.ComingStatus);
                     cmd.Parameters.AddWithValue("@CarCapacity", (object)eventRegDTO.CarCapacity ?? DBNull.Value);
-                    cmd.Parameters.AddWithValue("@PickupAddress", (object)eventRegDTO.PickupAddress ?? DBNull.Value);
+                    
                     cmd.Parameters.AddWithValue("@Longitude", (object)eventRegDTO.Longitude ?? DBNull.Value);
                     cmd.Parameters.AddWithValue("@Latitude", (object)eventRegDTO.Latitude ?? DBNull.Value);
 
@@ -145,7 +145,7 @@ namespace DAL
                                 EventID = (int)reader["EventID"],
                                 ComingStatus = (int)reader["ComingStatus"],
                                 CarCapacity = reader["CarCapacity"] as int?,
-                                PickupAddress = reader["PickupAddress"] as string,
+                                
                                 Longitude = reader["Longitude"] as double?,
                                 Latitude = reader["Latitude"] as double?,
                                 RegisteredAt = (DateTime)reader["RegisteredAt"]
@@ -189,7 +189,7 @@ namespace DAL
                                 EventID = (int)reader["EventID"],
                                 ComingStatus = (int)reader["ComingStatus"],
                                 CarCapacity = reader["CarCapacity"] as int?,
-                                PickupAddress = reader["PickupAddress"] as string,
+                                
                                 Longitude = reader["Longitude"] as double?,
                                 Latitude = reader["Latitude"] as double?,
                                 RegisteredAt = (DateTime)reader["RegisteredAt"]

@@ -7,7 +7,7 @@ public class Mosque
     {
         try
         {
-            if (string.IsNullOrWhiteSpace(mosque.Name) || string.IsNullOrWhiteSpace(mosque.Address))
+            if (string.IsNullOrWhiteSpace(mosque.Name))
                 throw new ArgumentException("Mosque name and address cannot be empty.");
 
             return MosquesData.CreateMosque(mosque);
@@ -25,7 +25,7 @@ public class Mosque
         {
             if (mosque.ID <= 0)
                 throw new ArgumentException("Invalid mosque ID.");
-            if (string.IsNullOrWhiteSpace(mosque.Name) || string.IsNullOrWhiteSpace(mosque.Address))
+            if (string.IsNullOrWhiteSpace(mosque.Name))
                 throw new ArgumentException("Mosque name and address cannot be empty.");
 
             return MosquesData.UpdateMosque(mosque);

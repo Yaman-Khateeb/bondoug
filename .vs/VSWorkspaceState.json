@@ -1,9 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\APILayer",
-    "\\DAL"
+    "\\Bondouq Project",
+    "\\Bondouq Project\\bin",
+    "\\Bondouq Project\\BusinessLayer",
+    "\\Bondouq Project\\Controllers",
+    "\\Bondouq Project\\DAL"
   ],
-  "SelectedNode": "\\APILayer\\Program.cs",
+  "SelectedNode": "\\Bondouq Project\\DAL\\EventRegestirationsData.cs",
   "PreviewInSolutionExplorer": false
 }
