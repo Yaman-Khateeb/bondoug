@@ -129,6 +129,40 @@ public static class MosquesData
         }
     }
 
+    public static MosqueDTO GetMosqueByName(string mosqueName)
+    {
+        try
+        {
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            using (SqlCommand cmd = new SqlCommand("sp_GetMosqueByName", conn))
+            {
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@name", mosqueName);
+
+                conn.Open();
+                using (SqlDataReader reader = cmd.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        return new MosqueDTO
+                        {
+                            ID = Convert.ToInt32(reader["ID"]),
+                            Name = reader["Name"].ToString(),
+
+                            Longitude = Convert.ToSingle(reader["Longitude"]),
+                            Latitude = Convert.ToSingle(reader["Latitude"])
+                        };
+                    }
+                }
+            }
+            return null;
+        }
+        catch (Exception ex)
+        {
+            throw new Exception("Error retrieving mosque by name", ex);
+        }
+    }
+
     public static List<MosqueDTO> GetAllMosques()
     {
         List<MosqueDTO> mosques = new List<MosqueDTO>();

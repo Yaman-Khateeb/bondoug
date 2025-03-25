@@ -67,4 +67,24 @@ public class EventRides
             return new List<EventRideDTO>(); // Return an empty list in case of error
         }
     }
+
+    public static List<PassengerDTO> GetAllPassengersForEvent(int eventID)
+    {
+        return EventRidesData.GetAllPassengersForEvent(eventID);
+    }
+
+    public static List<PassengerDTO> GetPassengersForEventWithNoCarAssigned(int eventID)
+    {
+        return EventRidesData.GetPassengersForEventWithNoCarAssigned(eventID);
+    }
+
+    public static List<DriverDTO> GetAllDriversForEvent(int eventID)
+    {
+        return EventRidesData.GetAllDriversForEvent(eventID);
+    }
+
+    public static List<DriverDTO> GetDriversWithAvailableCapacityForEvent(int eventID)
+    {
+        return EventRidesData.GetDriversWithAvailableCapacityForEvent(eventID);
+    }
 }

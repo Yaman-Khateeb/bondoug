@@ -7,25 +7,53 @@ using System.Threading.Tasks;
 using Microsoft.Data.SqlClient;
 namespace DAL
 {
-    public class EventDTO
+
+    public class EventBasicDTO
     {
         public int ID { get; set; }
         public string Name { get; set; }
         public int MosqueID { get; set; }
+        
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
-        public int CreatedByAdminID { get; set; }
+        //public int CreatedByAdminID { get; set; }
+
+        public EventBasicDTO() { }
+
+
+        public EventBasicDTO(int id, string name, int mosqueID, DateTime startDate, DateTime endDate)
+        {
+            ID = id;
+            Name = name;
+            MosqueID = mosqueID;            
+            StartDate = startDate;
+            EndDate = endDate;
+            //CreatedByAdminID = createdByAdminID;
+        }
+    }
+
+    public class EventDTO : EventBasicDTO
+    {
+        //public int ID { get; set; }
+        //public string Name { get; set; }
+        //public int MosqueID { get; set; }
+        //public DateTime StartDate { get; set; }
+        //public DateTime EndDate { get; set; }
+        ////public int CreatedByAdminID { get; set; }
 
         public EventDTO() { }
 
-        public EventDTO(int id, string name, int mosqueID, DateTime startDate, DateTime endDate, int createdByAdminID)
+        public MosqueDTO Mosque { get; set; }
+        
+        public EventDTO(int id, string name, int mosqueID, DateTime startDate, DateTime endDate)
         {
             ID = id;
             Name = name;
             MosqueID = mosqueID;
+            Mosque = MosquesData.GetMosqueByID(mosqueID);
             StartDate = startDate;
             EndDate = endDate;
-            CreatedByAdminID = createdByAdminID;
+            //CreatedByAdminID = createdByAdminID;
         }
     }
     
@@ -39,7 +67,7 @@ public class EventData
         /// <param name="eventDTO">Event data to insert</param>
         /// <param name="insertedID">Returns the newly inserted event ID</param>
         /// <returns>True if insertion was successful, otherwise false</returns>
-        public static int CreateEvent(EventDTO eventDTO)
+        public static int CreateEvent(EventBasicDTO eventDTO)
         {
             int insertedID;
             insertedID = -1;
@@ -54,7 +82,7 @@ public class EventData
                     cmd.Parameters.AddWithValue("@MosqueID", eventDTO.MosqueID);
                     cmd.Parameters.AddWithValue("@StartDate", eventDTO.StartDate);
                     cmd.Parameters.AddWithValue("@EndDate", eventDTO.EndDate);
-                    cmd.Parameters.AddWithValue("@CreatedByAdminID", eventDTO.CreatedByAdminID);
+                    //cmd.Parameters.AddWithValue("@CreatedByAdminID", eventDTO.CreatedByAdminID);
 
                     // Output parameter for inserted ID
                     SqlParameter outputParam = new SqlParameter("@InsertedID", SqlDbType.Int)
@@ -80,7 +108,7 @@ public class EventData
         /// </summary>
         /// <param name="eventDTO">Event data with updated values</param>
         /// <returns>True if update was successful, otherwise false</returns>
-        public static bool UpdateEvent(EventDTO eventDTO)
+        public static bool UpdateEvent(EventBasicDTO eventDTO)
         {
             try
             {
@@ -154,8 +182,8 @@ public class EventData
                                 reader["Name"].ToString(),
                                 Convert.ToInt32(reader["MosqueID"]),
                                 Convert.ToDateTime(reader["StartDate"]),
-                                Convert.ToDateTime(reader["EndDate"]),
-                                Convert.ToInt32(reader["CreatedByAdminID"])
+                                Convert.ToDateTime(reader["EndDate"])
+                                //Convert.ToInt32(reader["CreatedByAdminID"])
                             );
                         }
                     }
@@ -192,8 +220,8 @@ public class EventData
                                 reader["Name"].ToString(),
                                 Convert.ToInt32(reader["MosqueID"]),
                                 Convert.ToDateTime(reader["StartDate"]),
-                                Convert.ToDateTime(reader["EndDate"]),
-                                Convert.ToInt32(reader["CreatedByAdminID"])
+                                Convert.ToDateTime(reader["EndDate"])
+                                //Convert.ToInt32(reader["CreatedByAdminID"])
                             ));
                         }
                     }

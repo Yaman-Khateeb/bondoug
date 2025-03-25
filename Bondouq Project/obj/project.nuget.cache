@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7JBtIrqLfRU=",
+  "dgSpecHash": "glhb7dTpNjk=",
   "success": true,
-  "projectFilePath": "C:\\Programming_Projects\\Bondouqe Transportaion App\\APILayer\\BondouqTransportation.csproj",
+  "projectFilePath": "C:\\Programming_Projects\\Bondouqe Transportaion App\\Bondouq Project\\BondouqTransportation.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\yaman\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\yaman\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

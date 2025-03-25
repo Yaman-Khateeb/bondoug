@@ -60,10 +60,10 @@ namespace APILayer.Controllers
         [HttpPost(Name = "AddEvent")]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public ActionResult<EventDTO> AddEvent([FromBody] EventDTO eventDTO)
+        public ActionResult<EventDTO> AddEvent([FromBody] EventBasicDTO eventDTO)
         {
             if (eventDTO == null || string.IsNullOrWhiteSpace(eventDTO.Name)
-                || eventDTO.MosqueID <= 0 || eventDTO.CreatedByAdminID <= 0
+                || eventDTO.MosqueID <= 0 
                 || eventDTO.StartDate >= eventDTO.EndDate)
                 return BadRequest("Invalid event data.");
 
@@ -72,7 +72,8 @@ namespace APILayer.Controllers
                 return BadRequest("Failed to create event.");
 
             eventDTO.ID = eventID;
-            return CreatedAtRoute("GetEventByID", new { ID = eventID }, eventDTO);
+            EventDTO createdEvent = new EventDTO(eventID, eventDTO.Name, eventDTO.MosqueID, eventDTO.StartDate, eventDTO.EndDate);
+            return CreatedAtRoute("GetEventByID", new { ID = eventID }, createdEvent);
         }
         #endregion
 

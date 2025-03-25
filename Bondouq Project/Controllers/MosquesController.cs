@@ -27,13 +27,35 @@ namespace APILayer.Controllers
         }
         #endregion
 
+        #region Get By Name
+        /// <summary>
+        /// Get a mosque by ID
+        /// </summary>
+        /// <param name="ID">Mosque ID</param>
+        /// <returns>Mosque details</returns>
+        [HttpGet("ByName/{mosqueName}", Name = "GetMosqueByName")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public ActionResult<MosqueDTO> GetMosqueByName(string mosqueName)
+        {
+            if (String.IsNullOrEmpty(mosqueName))
+                return BadRequest("Mosque name must be provided.");
+
+            var mosque = Mosque.GetMosqueByName(mosqueName);
+            if (mosque == null)
+                return NotFound("Mosque not found!");
+            return Ok(mosque);
+        }
+        #endregion
+
         #region Get By ID
         /// <summary>
         /// Get a mosque by ID
         /// </summary>
         /// <param name="ID">Mosque ID</param>
         /// <returns>Mosque details</returns>
-        [HttpGet("{ID}", Name = "GetMosqueByID")]
+        [HttpGet("ByID/{ID}", Name = "GetMosqueByID")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -48,6 +70,7 @@ namespace APILayer.Controllers
             return Ok(mosque);
         }
         #endregion
+
 
         #region Add new
         /// <summary>

@@ -13,7 +13,7 @@ namespace APILayer.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         
-        public ActionResult<IEnumerable<UserDTO>> GetAll()
+        public ActionResult<IEnumerable<UserBasicDTO>> GetAll()
         {
             var users = Users.GetAllUsers();
             if (users.Count == 0)
@@ -25,7 +25,7 @@ namespace APILayer.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public ActionResult<UserDTO> GetUserByID(int ID)
+        public ActionResult<UserBasicDTO> GetUserByID(int ID)
         {
             if (ID < 0)
             {
@@ -187,6 +187,25 @@ namespace APILayer.Controllers
                 return BadRequest("Failed to delete user.");
             }
         }
+        [HttpPost("authenticate")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public ActionResult<UserBasicDTO> AuthenticateUser([FromBody] UserDTO loginDTO)
+        {
+            if (string.IsNullOrEmpty(loginDTO.MobileNumber) || string.IsNullOrEmpty(loginDTO.PasswordHash))
+            {
+                return BadRequest("Mobile number and password are required.");
+            }
 
+            var user = Users.AuthenticateUser(loginDTO.MobileNumber, loginDTO.PasswordHash);
+
+            if (user == null)
+            {
+                return Unauthorized("Invalid mobile number or password.");
+            }
+
+            return Ok(user);
+        }
     }
 }

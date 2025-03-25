@@ -2100,11 +2100,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Programming_Projects\\Bondouqe Transportaion App\\APILayer\\BondouqTransportation.csproj",
+      "projectUniqueName": "C:\\Programming_Projects\\Bondouqe Transportaion App\\Bondouq Project\\BondouqTransportation.csproj",
       "projectName": "BondouqTransportation",
-      "projectPath": "C:\\Programming_Projects\\Bondouqe Transportaion App\\APILayer\\BondouqTransportation.csproj",
+      "projectPath": "C:\\Programming_Projects\\Bondouqe Transportaion App\\Bondouq Project\\BondouqTransportation.csproj",
       "packagesPath": "C:\\Users\\yaman\\.nuget\\packages\\",
-      "outputPath": "C:\\Programming_Projects\\Bondouqe Transportaion App\\APILayer\\obj\\",
+      "outputPath": "C:\\Programming_Projects\\Bondouqe Transportaion App\\Bondouq Project\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

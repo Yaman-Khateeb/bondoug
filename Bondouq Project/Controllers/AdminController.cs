@@ -37,6 +37,43 @@ namespace APILayer.Controllers
             return Ok(admin);
         }
 
+        /// <summary>
+        /// Authenticates an admin using their mobile number and password hash.
+        /// </summary>
+        /// <param name="mobileNumber">Admin's registered mobile number</param>
+        /// <param name="passwordHash">Hashed password</param>
+        /// <returns>Authenticated AdminBasicDTO if successful</returns>
+        [HttpPost("authenticate", Name = "AuthenticateAdmin")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public ActionResult<AdminBasicDTO> AuthenticateAdmin([FromBody] LoginRequestDTO request)
+        {
+            if (request == null || string.IsNullOrWhiteSpace(request.MobileNumber) || string.IsNullOrWhiteSpace(request.Password))
+            {
+                return BadRequest("Mobile number and password are required.");
+            }
+
+            var hasher = new PasswordHasher<object>();
+            
+
+
+            var admin = Admin.AuthenticateAdmin(request.MobileNumber);
+
+            if (admin == null)
+                return Unauthorized("Invalid credentials.");
+
+            bool isPasswordCorrect = hasher.VerifyHashedPassword(null, admin.User.PasswordHash, request.Password) == PasswordVerificationResult.Success;
+            if (!isPasswordCorrect)
+                return Unauthorized("Invalid credentials.");
+
+            var user = admin.User;
+            //Right now all permissions will be set to -1
+            AdminBasicDTO adminBasic = new AdminBasicDTO(admin.ID, -1, admin.UserID, new UserBasicDTO(user.ID, user.FirstName,user.LastName, user.MobileNumber, user.Email));
+
+            return Ok(adminBasic);
+        }
+
         [HttpPost(Name = "AddAdmin")]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -110,17 +147,24 @@ namespace APILayer.Controllers
                 return Ok("Admin deleted successfully.");
             return BadRequest("Failed to delete admin.");
         }
+        # region does has permission
+        //[HttpGet("HasPermission")]
+        //[ProducesResponseType(StatusCodes.Status200OK)]
+        //[ProducesResponseType(StatusCodes.Status400BadRequest)]
+        //public ActionResult<bool> HasPermission(int AdminID, int RequiredPermission)
+        //{
+        //    if (AdminID <= 0)
+        //        return BadRequest("Invalid Admin ID.");
 
-        [HttpGet("HasPermission")]
-        [ProducesResponseType(StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public ActionResult<bool> HasPermission(int AdminID, int RequiredPermission)
+        //    bool hasPermission = Admin.HasPermission(AdminID, RequiredPermission);
+        //    return Ok(hasPermission);
+        //}
+        #endregion
+        public class LoginRequestDTO
         {
-            if (AdminID <= 0)
-                return BadRequest("Invalid Admin ID.");
-
-            bool hasPermission = Admin.HasPermission(AdminID, RequiredPermission);
-            return Ok(hasPermission);
+            public string MobileNumber { get; set; }
+            public string Password { get; set; }
         }
+
     }
 }

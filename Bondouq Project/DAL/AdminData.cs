@@ -214,6 +214,7 @@ namespace DAL
                                     reader["FirstName"].ToString(),
                                     reader["LastName"].ToString(),
                                     reader["MobileNumber"].ToString(),
+                                    reader["PasswordHash"].ToString(),
                                     reader["Email"] == DBNull.Value ? null : reader["Email"].ToString()
                                 );
 
@@ -236,18 +237,18 @@ namespace DAL
             return null;
         }
 
-        public static AdminDTO GetAdminByNumberAndPassword(string mobileNumber, string passwordHash)
+        public static AdminDTO GetAdminByMobile(string mobileNumber)
         {
             try
             {
                 using (SqlConnection conn = new SqlConnection(_connectionString))
                 {
                     conn.Open();
-                    using (SqlCommand cmd = new SqlCommand("sp_GetAdminByNumberAndPassword", conn))
+                    using (SqlCommand cmd = new SqlCommand("sp_GetAdminByMobile", conn))
                     {
                         cmd.CommandType = CommandType.StoredProcedure;
                         cmd.Parameters.AddWithValue("@MobileNumber", mobileNumber);
-                        cmd.Parameters.AddWithValue("@PasswordHash", passwordHash);
+                        
 
                         using (SqlDataReader reader = cmd.ExecuteReader())
                         {
@@ -258,7 +259,9 @@ namespace DAL
                                 reader["FirstName"].ToString(),
                                 reader["LastName"].ToString(),
                                 reader["MobileNumber"].ToString(),
+                                reader["PasswordHash"].ToString(),
                                 reader["Email"] == DBNull.Value ? null : reader["Email"].ToString()
+                                
                                 );
 
                                 return new AdminDTO(
@@ -275,14 +278,14 @@ namespace DAL
             catch (Exception ex)
             {
                 // Log the exception (implement your logging mechanism here)
-                Console.WriteLine("Error in GetAdminByNumberAndPassword: " + ex.Message);
+                Console.WriteLine("Error in GetAdminByMobile: " + ex.Message);
             }
             return null;
         }
 
-        public static List<AdminDTO> GetAllAdmins()
+        public static List<AdminBasicDTO> GetAllAdmins()
         {
-            List<AdminDTO> admins = new List<AdminDTO>();
+            List<AdminBasicDTO> admins = new List<AdminBasicDTO>();
             try
             {
                 using (SqlConnection conn = new SqlConnection(_connectionString))
@@ -295,19 +298,19 @@ namespace DAL
                             while (reader.Read())
                             {
                                 // Create UserDTO using the parameterized constructor
-                                UserDTO user = new UserDTO(
+                                UserBasicDTO user = new UserBasicDTO(
                                     (int)reader["UserID"],
                                     reader["FirstName"].ToString(),
                                     reader["LastName"].ToString(),
                                     reader["MobileNumber"].ToString(),
-                                    null,
-                                    reader["Email"] == DBNull.Value ? null : reader["Email"].ToString(),
-                                    reader["CreatedAt"] == DBNull.Value ? (DateTime?)null : (DateTime)reader["CreatedAt"],
-                                    reader["LastLogin"] == DBNull.Value ? (DateTime?)null : (DateTime)reader["LastLogin"]
+                                    //null,
+                                    reader["Email"] == DBNull.Value ? null : reader["Email"].ToString()
+                                    //reader["CreatedAt"] == DBNull.Value ? (DateTime?)null : (DateTime)reader["CreatedAt"],
+                                    //reader["LastLogin"] == DBNull.Value ? (DateTime?)null : (DateTime)reader["LastLogin"]
                                 );
 
                                 // Create AdminDTO with UserDTO
-                                AdminDTO admin = new AdminDTO(
+                                AdminBasicDTO admin = new AdminBasicDTO(
                                     (int)reader["ID"],
                                     (int)reader["Permissions"],
                                     (int)reader["UserID"],

@@ -190,26 +190,21 @@
   },
   {
     "ContainingType": "APILayer.Controllers.AdminController",
-    "Method": "HasPermission",
-    "RelativePath": "api/Admin/HasPermission",
-    "HttpMethod": "GET",
+    "Method": "AuthenticateAdmin",
+    "RelativePath": "api/Admin/authenticate",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "AdminID",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "RequiredPermission",
-        "Type": "System.Int32",
-        "IsRequired": false
+        "Name": "request",
+        "Type": "APILayer.Controllers.AdminController\u002BLoginRequestDTO",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Boolean",
+        "Type": "DAL.AdminBasicDTO",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -224,9 +219,19 @@
           "application/json",
           "text/json"
         ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
         "StatusCode": 400
       }
-    ]
+    ],
+    "EndpointName": "AuthenticateAdmin"
   },
   {
     "ContainingType": "APILayer.Controllers.EventController",
@@ -238,7 +243,7 @@
     "Parameters": [
       {
         "Name": "eventDTO",
-        "Type": "DAL.EventDTO",
+        "Type": "DAL.EventBasicDTO",
         "IsRequired": true
       }
     ],
@@ -809,51 +814,6 @@
   },
   {
     "ContainingType": "APILayer.Controllers.MosquesController",
-    "Method": "GetMosqueByID",
-    "RelativePath": "api/Mosques/{ID}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "ID",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "MosqueDTO",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      },
-      {
-        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 404
-      },
-      {
-        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 400
-      }
-    ],
-    "EndpointName": "GetMosqueByID"
-  },
-  {
-    "ContainingType": "APILayer.Controllers.MosquesController",
     "Method": "DeleteMosque",
     "RelativePath": "api/Mosques/{ID}",
     "HttpMethod": "DELETE",
@@ -922,6 +882,96 @@
       }
     ],
     "EndpointName": "GetAllMosques"
+  },
+  {
+    "ContainingType": "APILayer.Controllers.MosquesController",
+    "Method": "GetMosqueByID",
+    "RelativePath": "api/Mosques/ByID/{ID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MosqueDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ],
+    "EndpointName": "GetMosqueByID"
+  },
+  {
+    "ContainingType": "APILayer.Controllers.MosquesController",
+    "Method": "GetMosqueByName",
+    "RelativePath": "api/Mosques/ByName/{mosqueName}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "mosqueName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MosqueDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ],
+    "EndpointName": "GetMosqueByName"
   },
   {
     "ContainingType": "APILayer.Controllers.UsersController",
@@ -1057,7 +1107,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "DAL.UserDTO",
+        "Type": "DAL.UserBasicDTO",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -1096,7 +1146,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[DAL.UserDTO, BondouqTransportation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[DAL.UserBasicDTO, BondouqTransportation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -1115,6 +1165,50 @@
       }
     ],
     "EndpointName": "GetAllUsers"
+  },
+  {
+    "ContainingType": "APILayer.Controllers.UsersController",
+    "Method": "AuthenticateUser",
+    "RelativePath": "api/Users/authenticate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginDTO",
+        "Type": "DAL.UserDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DAL.UserBasicDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
   },
   {
     "ContainingType": "APILayer.Controllers.UsersController",

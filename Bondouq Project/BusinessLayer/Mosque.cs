@@ -66,6 +66,21 @@ public class Mosque
         }
     }
 
+    public static MosqueDTO GetMosqueByName(string mosqueName)
+    {
+        try
+        {
+            if (String.IsNullOrEmpty(mosqueName))
+                throw new ArgumentException("Invalid mosque ID.");
+
+            return MosquesData.GetMosqueByName(mosqueName);
+        }
+        catch (Exception ex)
+        {
+            throw new Exception("An error occurred while retrieving the mosque.", ex);
+        }
+    }
+
     public static List<MosqueDTO> GetAllMosques()
     {
         try

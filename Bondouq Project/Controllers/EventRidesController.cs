@@ -23,7 +23,7 @@ namespace API.Controllers
         public ActionResult<EventRideDTO> CreateEventRide([FromBody] EventRideDTO eventRide)
         {
             if (eventRide == null || eventRide.EventID <= 0 || eventRide.DriverID <= 0 ||
-                eventRide.PassengerID <= 0 || eventRide.EventRegistrationID <= 0)
+                eventRide.PassengerID <= 0 || eventRide.PassengerRegistrationID <= 0 || eventRide.DriverRegistrationID <= 0)
             {
                 return BadRequest("Invalid event ride data.");
             }
@@ -54,7 +54,7 @@ namespace API.Controllers
         public IActionResult UpdateEventRide([FromBody] EventRideDTO eventRide)
         {
             if (eventRide == null || eventRide.ID <= 0 || eventRide.EventID <= 0 || eventRide.DriverID <= 0 ||
-                eventRide.PassengerID <= 0 || eventRide.EventRegistrationID <= 0)
+                eventRide.PassengerID <= 0 || eventRide.PassengerRegistrationID <= 0 || eventRide.DriverRegistrationID <= 0)
             {
                 return BadRequest("Invalid event ride data.");
             }
@@ -118,5 +118,61 @@ namespace API.Controllers
             var eventRides = EventRides.GetEventRidesByEventIDAndDriverID(eventID, driverID);
             return Ok(eventRides);
         }
+
+        [HttpGet("passengers/{eventID}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public ActionResult<List<PassengerDTO>> GetAllPassengersForEvent(int eventID)
+        {
+            try
+            {
+                var passengers = EventRides.GetAllPassengersForEvent(eventID);
+                return Ok(passengers);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal Server Error: {ex.Message}");
+            }
+        }
+
+        [HttpGet("passengers/no-car/{eventID}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public ActionResult<List<PassengerDTO>> GetPassengersForEventWithNoCarAssigned(int eventID)
+        {
+            try
+            {
+                var passengers = EventRides.GetPassengersForEventWithNoCarAssigned(eventID);
+                return Ok(passengers);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal Server Error: {ex.Message}");
+            }
+        }
+
+        [HttpGet("Drivers/{eventID}", Name = "GetAllDriversForEvent")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public ActionResult<List<DriverDTO>> GetAllDriversForEvent(int eventID)
+        {
+            var drivers = EventRides.GetAllDriversForEvent(eventID);
+            if (drivers.Count == 0)
+                return NotFound($"No drivers found for event ID {eventID}!");
+            return Ok(drivers);
+        }
+
+        [HttpGet("DriversWithAvailableCapacity/{eventID}", Name = "GetDriversWithAvailableCapacityForEvent")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public ActionResult<List<DriverDTO>> GetDriversWithAvailableCapacityForEvent(int eventID)
+        {
+            var drivers = EventRides.GetDriversWithAvailableCapacityForEvent(eventID);
+            if (drivers.Count == 0)
+                return NotFound($"No drivers with available capacity found for event ID {eventID}!");
+            return Ok(drivers);
+        }
+
+
     }
 }

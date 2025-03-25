@@ -27,14 +27,22 @@ namespace BusinessLayer
             return dto;
         }
 
-        public static List<Admin> GetAllAdmins()
+        public static List<AdminBasicDTO> GetAllAdmins()
         {
-            List<Admin> admins = new List<Admin>();
-            foreach (var dto in AdminData.GetAllAdmins())
-            {
-                admins.Add(new Admin(dto.ID, dto.Permissions, dto.UserID, dto.User));
-            }
-            return admins;
+            //List<Admin> admins = new List<Admin>();
+            //foreach (var dto in AdminData.GetAllAdmins())
+            //{
+            //    admins.Add(new Admin(dto.ID, dto.Permissions, dto.UserID, dto.User));
+            //}
+            //return admins;
+            return AdminData.GetAllAdmins();
+        }
+        public static AdminDTO AuthenticateAdmin(string mobileNumber)
+        {
+            if (string.IsNullOrWhiteSpace(mobileNumber))
+                return null;
+
+            return AdminData.GetAdminByMobile(mobileNumber);
         }
 
         public static bool CreateAdmin(UserDTO user, enPermissions permissions)

@@ -27,14 +27,12 @@ namespace API.Controllers
                 return BadRequest("Invalid registration data.");
             }
 
-            if (eventRegistrationDTO.Longitude.HasValue &&
-                (eventRegistrationDTO.Longitude < -180 || eventRegistrationDTO.Longitude > 180))
+            if ((eventRegistrationDTO.Longitude < -180 || eventRegistrationDTO.Longitude > 180))
             {
                 return BadRequest("Invalid longitude value. It must be between -180 and 180.");
             }
 
-            if (eventRegistrationDTO.Latitude.HasValue &&
-                (eventRegistrationDTO.Latitude < -90 || eventRegistrationDTO.Latitude > 90))
+            if ((eventRegistrationDTO.Latitude < -90 || eventRegistrationDTO.Latitude > 90))
             {
                 return BadRequest("Invalid latitude value. It must be between -90 and 90.");
             }
@@ -61,14 +59,12 @@ namespace API.Controllers
             if (eventRegistrationDTO == null || eventRegistrationDTO.ID <= 0)
                 return BadRequest("Invalid registration ID or data.");
 
-            if (eventRegistrationDTO.Longitude.HasValue &&
-                (eventRegistrationDTO.Longitude < -180 || eventRegistrationDTO.Longitude > 180))
+            if ((eventRegistrationDTO.Longitude < -180 || eventRegistrationDTO.Longitude > 180))
             {
                 return BadRequest("Invalid longitude value. It must be between -180 and 180.");
             }
 
-            if (eventRegistrationDTO.Latitude.HasValue &&
-                (eventRegistrationDTO.Latitude < -90 || eventRegistrationDTO.Latitude > 90))
+            if (                (eventRegistrationDTO.Latitude < -90 || eventRegistrationDTO.Latitude > 90))
             {
                 return BadRequest("Invalid latitude value. It must be between -90 and 90.");
             }

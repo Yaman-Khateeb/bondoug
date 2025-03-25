@@ -18,13 +18,13 @@ namespace BusinessLayer
         /// <param name="eventDTO">Event data to insert</param>
         /// <param name="insertedID">Returns the newly inserted event ID</param>
         /// <returns>True if insertion was successful, otherwise false</returns>
-        public static int CreateEvent(EventDTO eventDTO)
+        public static int CreateEvent(EventBasicDTO eventDTO)
         {
             
             if (eventDTO == null || string.IsNullOrWhiteSpace(eventDTO.Name))
                 return -1;
 
-            if (eventDTO.MosqueID <= 0 || eventDTO.CreatedByAdminID <= 0)
+            if (eventDTO.MosqueID <= 0)
                 return -1;
 
             if (eventDTO.StartDate >= eventDTO.EndDate)
@@ -38,7 +38,7 @@ namespace BusinessLayer
         /// </summary>
         /// <param name="eventDTO">Updated event data</param>
         /// <returns>True if update was successful, otherwise false</returns>
-        public static bool UpdateEvent(EventDTO eventDTO)
+        public static bool UpdateEvent(EventBasicDTO eventDTO)
         {
             if (eventDTO == null || eventDTO.ID <= 0 || string.IsNullOrWhiteSpace(eventDTO.Name))
                 return false;

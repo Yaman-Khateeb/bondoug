@@ -11,7 +11,7 @@ namespace BL
         /// </summary>
         /// <param name="eventRegistrationDTO">Registration details.</param>
         /// <returns>Inserted registration ID, or -1 if failed.</returns>
-        public static int RegisterForEvent(EventRegistrationDTO eventRegistrationDTO)
+        public static int RegisterForEvent(EventRegistrationBasicDTO eventRegistrationDTO)
         {
             if (eventRegistrationDTO == null || eventRegistrationDTO.UserID <= 0 || eventRegistrationDTO.EventID <= 0)
                 return -1;
@@ -27,7 +27,7 @@ namespace BL
         /// </summary>
         /// <param name="eventRegistrationDTO">Updated registration details.</param>
         /// <returns>True if updated successfully, otherwise false.</returns>
-        public static bool UpdateEventRegistration(EventRegistrationDTO eventRegistrationDTO)
+        public static bool UpdateEventRegistration(EventRegistrationBasicDTO eventRegistrationDTO)
         {
             if (eventRegistrationDTO == null || eventRegistrationDTO.ID <= 0)
                 return false;

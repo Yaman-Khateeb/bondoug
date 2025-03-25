@@ -3,6 +3,30 @@
   "WorkspaceRootPath": "C:\\Programming_Projects\\Bondouqe Transportaion App\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Programming_Projects\\Bondouqe Transportaion App\\Bondouq Project\\DAL\\EventRidesData.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bondouq Project\\DAL\\EventRidesData.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Programming_Projects\\Bondouqe Transportaion App\\Bondouq Project\\Controllers\\EventRidesController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bondouq Project\\Controllers\\EventRidesController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Programming_Projects\\Bondouqe Transportaion App\\Bondouq Project\\Controllers\\EventsController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bondouq Project\\Controllers\\EventsController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Programming_Projects\\Bondouqe Transportaion App\\Bondouq Project\\BusinessLayer\\EventRides.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bondouq Project\\BusinessLayer\\EventRides.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Programming_Projects\\Bondouqe Transportaion App\\Bondouq Project\\Controllers\\UsersController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bondouq Project\\Controllers\\UsersController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Programming_Projects\\Bondouqe Transportaion App\\Bondouq Project\\DAL\\UserData.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bondouq Project\\DAL\\UserData.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Programming_Projects\\Bondouqe Transportaion App\\Bondouq Project\\DAL\\EventRegestirationsData.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bondouq Project\\DAL\\EventRegestirationsData.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -23,10 +47,6 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bondouq Project\\BusinessLayer\\Mosque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Programming_Projects\\Bondouqe Transportaion App\\Bondouq Project\\DAL\\UserData.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bondouq Project\\DAL\\UserData.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Programming_Projects\\Bondouqe Transportaion App\\Bondouq Project\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bondouq Project\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -38,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 18,
+          "SelectedChildIndex": 21,
           "Children": [
             {
               "$type": "Bookmark",
@@ -114,20 +134,84 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "EventRegestirationsData.cs",
-              "DocumentMoniker": "C:\\Programming_Projects\\Bondouqe Transportaion App\\Bondouq Project\\DAL\\EventRegestirationsData.cs",
-              "RelativeDocumentMoniker": "Bondouq Project\\DAL\\EventRegestirationsData.cs",
-              "ToolTip": "C:\\Programming_Projects\\Bondouqe Transportaion App\\Bondouq Project\\DAL\\EventRegestirationsData.cs",
-              "RelativeToolTip": "Bondouq Project\\DAL\\EventRegestirationsData.cs",
-              "ViewState": "AgIAAHoAAAAAAAAAAAApwJMAAAAgAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "EventsController.cs",
+              "DocumentMoniker": "C:\\Programming_Projects\\Bondouqe Transportaion App\\Bondouq Project\\Controllers\\EventsController.cs",
+              "RelativeDocumentMoniker": "Bondouq Project\\Controllers\\EventsController.cs",
+              "ToolTip": "C:\\Programming_Projects\\Bondouqe Transportaion App\\Bondouq Project\\Controllers\\EventsController.cs",
+              "RelativeToolTip": "Bondouq Project\\Controllers\\EventsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T05:31:50.889Z",
+              "WhenOpened": "2025-03-25T20:35:18.058Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "EventRidesController.cs",
+              "DocumentMoniker": "C:\\Programming_Projects\\Bondouqe Transportaion App\\Bondouq Project\\Controllers\\EventRidesController.cs",
+              "RelativeDocumentMoniker": "Bondouq Project\\Controllers\\EventRidesController.cs",
+              "ToolTip": "C:\\Programming_Projects\\Bondouqe Transportaion App\\Bondouq Project\\Controllers\\EventRidesController.cs",
+              "RelativeToolTip": "Bondouq Project\\Controllers\\EventRidesController.cs",
+              "ViewState": "AgIAAIoAAAAAAAAAAAAswK4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T19:53:50.169Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EventRides.cs",
+              "DocumentMoniker": "C:\\Programming_Projects\\Bondouqe Transportaion App\\Bondouq Project\\BusinessLayer\\EventRides.cs",
+              "RelativeDocumentMoniker": "Bondouq Project\\BusinessLayer\\EventRides.cs",
+              "ToolTip": "C:\\Programming_Projects\\Bondouqe Transportaion App\\Bondouq Project\\BusinessLayer\\EventRides.cs",
+              "RelativeToolTip": "Bondouq Project\\BusinessLayer\\EventRides.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAswFgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T19:50:33.113Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EventRidesData.cs",
+              "DocumentMoniker": "C:\\Programming_Projects\\Bondouqe Transportaion App\\Bondouq Project\\DAL\\EventRidesData.cs",
+              "RelativeDocumentMoniker": "Bondouq Project\\DAL\\EventRidesData.cs",
+              "ToolTip": "C:\\Programming_Projects\\Bondouqe Transportaion App\\Bondouq Project\\DAL\\EventRidesData.cs",
+              "RelativeToolTip": "Bondouq Project\\DAL\\EventRidesData.cs",
+              "ViewState": "AgIAAL8BAAAAAAAAAAAvwM4BAABiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T19:47:45.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Programming_Projects\\Bondouqe Transportaion App\\Bondouq Project\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "Bondouq Project\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Programming_Projects\\Bondouqe Transportaion App\\Bondouq Project\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "Bondouq Project\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T10:46:09.656Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EventRegestirationsData.cs",
+              "DocumentMoniker": "C:\\Programming_Projects\\Bondouqe Transportaion App\\Bondouq Project\\DAL\\EventRegestirationsData.cs",
+              "RelativeDocumentMoniker": "Bondouq Project\\DAL\\EventRegestirationsData.cs",
+              "ToolTip": "C:\\Programming_Projects\\Bondouqe Transportaion App\\Bondouq Project\\DAL\\EventRegestirationsData.cs",
+              "RelativeToolTip": "Bondouq Project\\DAL\\EventRegestirationsData.cs",
+              "ViewState": "AgIAAHoAAAAAAAAAAAApwIQAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T05:31:50.889Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "EventRegisterationsController.cs",
               "DocumentMoniker": "C:\\Programming_Projects\\Bondouqe Transportaion App\\Bondouq Project\\Controllers\\EventRegisterationsController.cs",
               "RelativeDocumentMoniker": "Bondouq Project\\Controllers\\EventRegisterationsController.cs",
@@ -135,12 +219,11 @@
               "RelativeToolTip": "Bondouq Project\\Controllers\\EventRegisterationsController.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T05:31:40.439Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-24T05:31:40.439Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "MosquesController.cs",
               "DocumentMoniker": "C:\\Programming_Projects\\Bondouqe Transportaion App\\Bondouq Project\\Controllers\\MosquesController.cs",
               "RelativeDocumentMoniker": "Bondouq Project\\Controllers\\MosquesController.cs",
@@ -148,12 +231,11 @@
               "RelativeToolTip": "Bondouq Project\\Controllers\\MosquesController.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAApwEAAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T05:30:51.135Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-24T05:30:51.135Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "Mosque.cs",
               "DocumentMoniker": "C:\\Programming_Projects\\Bondouqe Transportaion App\\Bondouq Project\\BusinessLayer\\Mosque.cs",
               "RelativeDocumentMoniker": "Bondouq Project\\BusinessLayer\\Mosque.cs",
@@ -161,12 +243,11 @@
               "RelativeToolTip": "Bondouq Project\\BusinessLayer\\Mosque.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAApwBsAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T05:30:23.936Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-24T05:30:23.936Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "MosqueData.cs",
               "DocumentMoniker": "C:\\Programming_Projects\\Bondouqe Transportaion App\\Bondouq Project\\DAL\\MosqueData.cs",
               "RelativeDocumentMoniker": "Bondouq Project\\DAL\\MosqueData.cs",
@@ -174,8 +255,7 @@
               "RelativeToolTip": "Bondouq Project\\DAL\\MosqueData.cs",
               "ViewState": "AgIAACQAAAAAAAAAAAApwD0AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T05:28:50.515Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-24T05:28:50.515Z"
             },
             {
               "$type": "Document",
@@ -185,14 +265,13 @@
               "RelativeDocumentMoniker": "Bondouq Project\\DAL\\UserData.cs",
               "ToolTip": "C:\\Programming_Projects\\Bondouqe Transportaion App\\Bondouq Project\\DAL\\UserData.cs",
               "RelativeToolTip": "Bondouq Project\\DAL\\UserData.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAIAwwCAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T05:28:44.875Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-24T05:28:44.875Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Programming_Projects\\Bondouqe Transportaion App\\Bondouq Project\\Program.cs",
               "RelativeDocumentMoniker": "Bondouq Project\\Program.cs",
@@ -200,8 +279,7 @@
               "RelativeToolTip": "Bondouq Project\\Program.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T05:28:32.827Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-24T05:28:32.827Z"
             }
           ]
         },

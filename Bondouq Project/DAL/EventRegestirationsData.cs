@@ -7,18 +7,34 @@ namespace DAL
 {
     using System;
 
-    
-        public class EventRegistrationDTO
+    public class EventRegistrationBasicDTO
+    {
+        public int ID { get; set; }
+        public int UserID { get; set; }
+        public int EventID { get; set; }
+        public int ComingStatus { get; set; }  // 0 = Not Coming, 1 = Coming, 2 = Needs Ride, 3 = Providing Ride
+        public int? CarCapacity { get; set; }  // Only for those providing rides
+
+        public double Longitude { get; set; }
+        public double Latitude { get; set; }
+        //public DateTime RegisteredAt { get; set; }
+    }
+
+    public class EventRegistrationDTO : EventRegistrationBasicDTO
         {
-            public int ID { get; set; }
-            public int UserID { get; set; }
-            public int EventID { get; set; }
-            public int ComingStatus { get; set; }  // 0 = Not Coming, 1 = Coming, 2 = Needs Ride, 3 = Providing Ride
-            public int? CarCapacity { get; set; }  // Only for those providing rides
-            
-            public double? Longitude { get; set; }
-            public double? Latitude { get; set; }
-            public DateTime RegisteredAt { get; set; }
+        public UserBasicDTO User { get; set; }
+        public EventRegistrationDTO(int id, int userID, int eventID, int comingstatus, int? carCapacity, double longitude, double latitude)
+        {
+            User = UserData.GetUserByID(userID);
+            ID = id;
+            UserID = userID;
+            EventID = eventID;
+            ComingStatus = comingstatus;
+            CarCapacity = carCapacity;
+            Longitude = longitude;
+            Latitude = latitude;
+
+        }
         }
     
 
@@ -29,7 +45,7 @@ namespace DAL
         /// <summary>
         /// Inserts a new event registration and returns the inserted ID.
         /// </summary>
-        public static int CreateEventRegistration(EventRegistrationDTO eventRegDTO)
+        public static int CreateEventRegistration(EventRegistrationBasicDTO eventRegDTO)
         {
             int insertedID = -1;
 
@@ -70,7 +86,7 @@ namespace DAL
         /// <summary>
         /// Updates an existing event registration.
         /// </summary>
-        public static bool UpdateEventRegistration(EventRegistrationDTO eventRegDTO)
+        public static bool UpdateEventRegistration(EventRegistrationBasicDTO eventRegDTO)
         {
             try
             {
@@ -139,17 +155,17 @@ namespace DAL
                         if (reader.Read())
                         {
                             eventRegDTO = new EventRegistrationDTO
-                            {
-                                ID = (int)reader["ID"],
-                                UserID = (int)reader["UserID"],
-                                EventID = (int)reader["EventID"],
-                                ComingStatus = (int)reader["ComingStatus"],
-                                CarCapacity = reader["CarCapacity"] as int?,
+                            (
                                 
-                                Longitude = reader["Longitude"] as double?,
-                                Latitude = reader["Latitude"] as double?,
-                                RegisteredAt = (DateTime)reader["RegisteredAt"]
-                            };
+                                (int)reader["ID"],
+                                (int)reader["UserID"],
+                                (int)reader["EventID"],
+                                (int)reader["ComingStatus"],
+                                reader["CarCapacity"] as int?,                                
+                                Convert.ToDouble(reader["Longitude"]),
+                                Convert.ToDouble(reader["Latitude"])
+                                
+                            );
                         }
                     }
                 }
@@ -183,17 +199,18 @@ namespace DAL
                         while (reader.Read())
                         {
                             eventRegistrations.Add(new EventRegistrationDTO
-                            {
-                                ID = (int)reader["ID"],
-                                UserID = (int)reader["UserID"],
-                                EventID = (int)reader["EventID"],
-                                ComingStatus = (int)reader["ComingStatus"],
-                                CarCapacity = reader["CarCapacity"] as int?,
-                                
-                                Longitude = reader["Longitude"] as double?,
-                                Latitude = reader["Latitude"] as double?,
-                                RegisteredAt = (DateTime)reader["RegisteredAt"]
-                            });
+                            (
+                                (int)reader["ID"],
+                                (int)reader["UserID"],
+                                (int)reader["EventID"],
+                                (int)reader["ComingStatus"],
+                                reader["CarCapacity"] as int?,
+                                Convert.ToDouble(reader["Longitude"]),
+                                Convert.ToDouble(reader["Latitude"])
+
+                            )
+                            )
+                            ;
                         }
                     }
                 }

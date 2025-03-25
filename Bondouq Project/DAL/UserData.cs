@@ -18,11 +18,11 @@ namespace DAL
         public string PasswordHash { get; set; }
         public string Email { get; set; }
 
-        public DateTime? CreatedAt { get; set; }
+        //public DateTime? CreatedAt { get; set; }
         public DateTime? LastLogin { get; set; }
 
         // Parameterized constructor
-        public UserDTO(int id, string firstName, string lastName, string mobileNumber, string passwordHash = null, string email = null, DateTime? createdAt = null, DateTime? lastLogin = null)
+        public UserDTO(int id, string firstName, string lastName, string mobileNumber, string passwordHash = null, string email = null, DateTime? lastLogin = null)
         {
             ID = id;
             FirstName = firstName;
@@ -30,29 +30,29 @@ namespace DAL
             MobileNumber = mobileNumber;
             PasswordHash = passwordHash;
             Email = email;
-            CreatedAt = createdAt.HasValue ? createdAt.Value : null;
+            
             LastLogin = lastLogin.HasValue ? lastLogin.Value : null;
         }
     }
 
-    public class UserBasicDTO
-    {
-        public int ID { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public string MobileNumber { get; set; }
-        public string Email { get; set; }
-
-        // Parameterized constructor
-        public UserBasicDTO(int id, string firstName, string lastName, string mobileNumber, string email = null)
+        public class UserBasicDTO
         {
-            ID = id;
-            FirstName = firstName;
-            LastName = lastName;
-            MobileNumber = mobileNumber;
-            Email = email;
+            public int ID { get; set; }
+            public string FirstName { get; set; }
+            public string LastName { get; set; }
+            public string MobileNumber { get; set; }
+            public string Email { get; set; }
+
+            // Parameterized constructor
+            public UserBasicDTO(int id, string firstName, string lastName, string mobileNumber, string email = null)
+            {
+                ID = id;
+                FirstName = firstName;
+                LastName = lastName;
+                MobileNumber = mobileNumber;
+                Email = email;
+            }
         }
-    }
 
     public class UserData
     {
@@ -283,6 +283,45 @@ namespace DAL
                 Console.WriteLine("Error in DeleteUser: " + ex.Message);
                 return false;
             }
+        }
+        public static UserBasicDTO GetUserByMobileAndPassword(string mobileNumber, string passwordHash)
+        {
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(_connectionString))
+                {
+                    connection.Open();
+
+                    using (SqlCommand command = new SqlCommand("sp_GetUserByMobileAndPassword", connection))
+                    {
+                        command.CommandType = CommandType.StoredProcedure;
+                        command.Parameters.Add(new SqlParameter("@MobileNumber", SqlDbType.VarChar, 15) { Value = mobileNumber });
+                        command.Parameters.Add(new SqlParameter("@PasswordHash", SqlDbType.VarChar, 255) { Value = passwordHash });
+
+                        using (SqlDataReader reader = command.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                return new UserBasicDTO(
+                                    reader.GetInt32(reader.GetOrdinal("ID")),
+                                    reader.GetString(reader.GetOrdinal("FirstName")),
+                                    reader.GetString(reader.GetOrdinal("LastName")),
+                                    reader.GetString(reader.GetOrdinal("MobileNumber")),
+                                    reader.GetString(reader.GetOrdinal("Email"))
+                                    //reader.GetDateTime(reader.GetOrdinal("CreatedAt")),
+                                    //reader.IsDBNull(reader.GetOrdinal("LastLogin")) ? (DateTime?)null : reader.GetDateTime(reader.GetOrdinal("LastLogin"))
+                                );
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Log exception here
+                Console.WriteLine(ex.Message);
+            }
+            return null; // Return null if user not found or an error occurred
         }
     }
 }

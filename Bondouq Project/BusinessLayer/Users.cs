@@ -31,7 +31,7 @@ namespace BusinessLayer
 
         public UserDTO UDTO
         {
-            get { return new UserDTO(ID, FirstName, LastName, MobileNumber, null, Email, CreatedAt, LastLogin); }
+            get { return new UserDTO(ID, FirstName, LastName,PasswordHash, MobileNumber, Email); }
         }
 
         public static UserBasicDTO GetUserByID(int userID)
@@ -64,7 +64,10 @@ namespace BusinessLayer
             return UserData.UpdateUserPassword(ID,password);
         }
 
-
+        public static UserBasicDTO AuthenticateUser(string mobileNumber, string passwordHash)
+        {
+            return UserData.GetUserByMobileAndPassword(mobileNumber, passwordHash);
+        }
 
         public static bool DeleteUser(int userID)
         {
