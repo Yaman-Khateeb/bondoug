@@ -42,7 +42,6 @@ namespace DAL
             public string LastName { get; set; }
             public string MobileNumber { get; set; }
             public string Email { get; set; }
-
             // Parameterized constructor
             public UserBasicDTO(int id, string firstName, string lastName, string mobileNumber, string email = null)
             {
