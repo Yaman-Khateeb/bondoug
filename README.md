@@ -25,4 +25,4 @@ Transporting-Students is an application designed to help students manage transpo
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/Transporting-Students.git
+   git clone https://github.com/Yaman-Khateeb/transporting-students.git
